@@ -3,7 +3,7 @@ body {
     text-align: center;
     font-size: 40px;
     color: white;
-    background-image: radial-gradient(black, white);
+    background-color:rgb(209, 208, 208);
     align-items: center;
     flex-direction: column;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
