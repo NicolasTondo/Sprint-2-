@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    background-image: radial-gradient(black, white);
+    align-items: center;
+    flex-direction: column;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    border-radius: 30px;
+    background-color: rgb(36, 36, 36);
+    padding: 20px;
+}
+
+.mainContainer {
+    background-color: rgb(36, 36, 36);
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+}
+
+.container {
+    background-color: rgb(26, 26, 26);
+    border-radius: 30px; 
+    padding: 10px;
+    width: 475px;
+}
+
+#divButtons {
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+    margin-top: 150px;
+}
+
+button {
+    background-color: rgb(26, 26, 26);
+    border-radius: 10px;
+    border-style: none;
+    height: 100px;
+    width: 100px;
+    font-size: 40px;
+    color: white;
+    margin:7px;
+}
+
+button:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+button:active {
+    background-color: rgb(65, 65, 65);
+}
+
+.inputBox {
+    height: 100px;
+    width: 300px;
+    padding: 10px;
+    background-color: rgb(48, 48, 48);
+    border-radius: 20px;
+    border-style: none;
+    font-size: 30px;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+}
+
+.containerBandeira {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(48, 48, 48);
+    border-radius: 20px;
+    width: 400px;
+    margin-left: 35px;
+}
+
+.bandeira {
+    border-radius: 25px;
+    height: 65px;
+    width: 65px;
+    overflow: hidden;
+    display: flex;
+}

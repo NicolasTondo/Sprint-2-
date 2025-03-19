@@ -3,26 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de Câmbio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h2>Conversor de Câmbio</h2>
-        <label for="fromCurrency">De:</label>
-        <select id="fromCurrency"></select>
-        
-        <label for="toCurrency">Para:</label>
-        <select id="toCurrency"></select>
-        
-        <label for="amount">Valor:</label>
-        <input type="number" id="amount" placeholder="Digite o valor">
-        
-        <button id="convert">Converter</button>
-        <button id="reset">Resetar</button>
-        
-        <h3 id="result">Resultado: -</h3>
-    </div>
+    <title>Câmbio de Moedas</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="gradientBackground">
+        <h1>Conversor de Moeda</h1>
+
+        <div class="mainContainer">
+
+            <div class="container" id="containerM1">
+                <h2>Converter de:</h2>
+                <div class="containerBandeira">
+                    <div class="bandeira">
+                        <img src="https://flagsapi.com/BR/flat/64.png">
+                    </div>
+                    <select class="inputBox" id="selectMoeda1">
+                        <option value="BRL">Real(BRL)</option>
+                        <option value="USD">Dólar(USD)</option>
+                        <option value="EUR">Real(EUR)</option>
+                    </select>
+                </div>
+
+                <h2>Valor:</h2>
+                <input class="inputBox" type="text">
+            </div>
+
+            <div id="divButtons">
+                <button>⇵</button>
+                <button>↺</button>
+            </div>
+
+            <div class="container" id="containerM2">
+                <h2>Converter para:</h2>
+                <div class="containerBandeira">
+                    <div class="bandeira">
+                        <img src="https://flagsapi.com/US/flat/64.png">
+                    </div>
+                    <select class="inputBox" id="selectMoeda1">
+                        <option value="BRL">Real(BRL)</option>
+                        <option value="USD">Dólar(USD)</option>
+                        <option value="EUR">Real(EUR)</option>
+                    </select>
+                </div>
+                <h2>Resultado:</h2>
+                <input class="inputBox" type="text" id="resultado" disabled>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>
