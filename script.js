@@ -6,9 +6,9 @@ const convertBtn = document.getElementById("convert");
 const resetBtn = document.getElementById("reset");
 const result = document.getElementById("result");
 
-// requisição ao https  
-// usa lista do json
-//fetch("https://api.frankfurter.app/currencies")
+// requisição ao https 
+// uso do arquivo csv com json  
+    fetch("https://economia.awesomeapi.com.br/xml/available")
     .then(response => response.json())
 
     // uso de then para definir a data de cada moeda da API
