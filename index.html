@@ -9,11 +9,18 @@
 <body>
     <div class="container">
         <h2>Conversor de Câmbio</h2>
+        
         <label for="fromCurrency">De:</label>
-        <select id="fromCurrency"></select>
+        <div class="currency-container">
+            <img id="fromFlag" class="flag" src="" alt="Bandeira">
+            <select id="fromCurrency"></select>
+        </div>
         
         <label for="toCurrency">Para:</label>
-        <select id="toCurrency"></select>
+        <div class="currency-container">
+            <img id="toFlag" class="flag" src="" alt="Bandeira">
+            <select id="toCurrency"></select>
+        </div>
         
         <label for="amount">Valor:</label>
         <input type="number" id="amount" placeholder="Digite o valor">
