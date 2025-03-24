@@ -1,57 +1,96 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Câmbio de Moedas</title>
+    <title>Sprint2</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
-
 <body>
-    <div class="gradientBackground">
-        <h1>Conversor de Moeda</h1>
-
-        <div class="mainContainer">
-
-            <div class="container" id="containerM1">
-                <h2>Converter de:</h2>
-                <div class="containerBandeira">
-                    <div class="bandeira">
-                        <img src="https://flagsapi.com/BR/flat/64.png">
-                    </div>
-                    <select class="inputBox" id="selectMoeda1">
-                        <option value="BRL">Real(BRL)</option>
-                        <option value="USD">Dólar(USD)</option>
-                        <option value="EUR">Real(EUR)</option>
-                    </select>
+    <div class="barraLateral">
+        <h1>AgesConverte</h1>
+        <div class="setor">
+            <img src="https://www.figma.com/design/9YHR51TePAt7KeU1wlb6xv/Untitled?node-id=8-14&t=htGCB30u0oUnPvRI-4" alt="">
+            <h2>Converter</h2>
+        </div>
+        <div class="setor">
+            <img src="https://www.figma.com/design/9YHR51TePAt7KeU1wlb6xv/Untitled?node-id=8-14&t=htGCB30u0oUnPvRI-4" alt="">
+            <h2>Gráficos</h2>
+        </div>
+    </div>
+    <div id="fundoGeral">
+        <div id="fundoMoedas">
+            <div class="miniContainer">
+                <h2>Dolar/USD</h2>
+                <p>R$5.30</p>
+            </div>
+            <div class="miniContainer">
+                <h2>Iene/JPY</h2>
+                <p>R$1000.00</p>
+            </div>
+            <div class="miniContainer">
+                <h2>Euro/EUR</h2>
+                <p>R$6.00</p>
+            </div>
+        </div>
+        <div class="container">
+            <div id="C1T1">
+                <div>
+                    <h2>Valor</h2>
+                    <input class="input" type="text">
                 </div>
+                <div>
+                    <h2>Converter de</h2>
+                    <select class="input" id="converterDe">
 
-                <h2>Valor:</h2>
-                <input class="inputBox" type="text">
-            </div>
-
-            <div id="divButtons">
-                <button>⇵</button>
-                <button>↺</button>
-            </div>
-
-            <div class="container" id="containerM2">
-                <h2>Converter para:</h2>
-                <div class="containerBandeira">
-                    <div class="bandeira">
-                        <img src="https://flagsapi.com/US/flat/64.png">
-                    </div>
-                    <select class="inputBox" id="selectMoeda1">
-                        <option value="BRL">Real(BRL)</option>
-                        <option value="USD">Dólar(USD)</option>
-                        <option value="EUR">Real(EUR)</option>
                     </select>
+                    <div>
+                        <button id="botaoTroca">↑↓</button>
+                    </div>
+                    <h2 style="margin: 0px;">Para</h2>
+                    <select class="input" id="converterPara"></select>
                 </div>
-                <h2>Resultado:</h2>
-                <input class="inputBox" type="text" id="resultado" disabled>
+                <div>
+                    <button>Resetar</button>
+                    <button>Converter</button>
+                </div>
             </div>
-
+            <div id="C1T2">
+                <h2>
+                    Resultado da conversão
+                </h2>
+                <div id="textBox">
+                    <div class="textDiv">
+                        <p>
+                            Converter de:
+                        </p>
+                        <p>
+                            Para:
+                        </p>
+                    </div>
+                    <div class="textDiv">
+                        <p>
+                            Valor a converter:
+                        </p>
+                        <p>
+                            Resultado da conversão:
+                        </p>
+                    </div>
+                    <div class="textDiv">
+                        <p>
+                            Taxa:
+                        </p>
+                        <p>
+                            a
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2>
+                Gráficos
+            </h2>
         </div>
     </div>
 </body>

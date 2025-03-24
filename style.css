@@ -1,87 +1,161 @@
 body {
+    background-color: rgb(44, 44, 44);
+    padding: 0;
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+img {
+    width: 24px;
+    height: 24px;
+}
+
+.setor {
     display: flex;
-    text-align: center;
-    font-size: 40px;
-    color: white;
-    background-color:rgb(209, 208, 208);
-    align-items: center;
-    flex-direction: column;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
-    border-radius: 30px;
-    background-color: rgb(36, 36, 36);
+    border-color: rgb(180,160,10);
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
     padding: 20px;
 }
 
-.mainContainer {
-    background-color: rgb(36, 36, 36);
+.barraLateral{
+    height: 100%;
+    width: 300px;
+    padding:10px;
+    color: white;
+    background-color:rgb(68,60,60);
+    position: fixed;
+    margin: 0;
+}
+
+.miniContainer {
+    height: 150px;
+    width: 275px;
+    background-color: rgb(51,51,51);
     border-radius: 30px;
-    padding: 20px;
-    display: flex;
+    border-style: solid;
+    margin: 40px;
+    margin-right: 85px;
+    margin-left:0px;
+    padding: 10px;
+    color:white;
+    border-color: rgb(180,160,10);
+    border-width: 1px;
+    font-size: 20px;
+}
+
+#fundoGeral {
+    padding-left: 400px;
+}
+
+#fundoMoedas {
+    display:flex;
 }
 
 .container {
-    background-color: rgb(26, 26, 26);
-    border-radius: 30px; 
-    padding: 10px;
-    width: 475px;
-}
-
-#divButtons {
+    height: 500px;
+    width: 1000px;
+    background-color:  rgb(51,51,51);
+    border-radius: 40px;
+    margin-bottom: 40px;
+    border-color: rgb(180,160,10);
+    border-style: solid;
+    border-width: 1px;
+    color:white;
+    padding: 30px;
+    font-size: 20px;
+    padding-top: 8px;
     display: flex;
-    flex-direction: column;
-    vertical-align: center;
-    margin-top: 150px;
 }
 
-button {
-    background-color: rgb(26, 26, 26);
-    border-radius: 10px;
+.setor {
+    border-color: rgb(180,160,10);
+    border-width: 1px;
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 10px;
+}
+
+.input {
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 5px;
+    color:white;
+    height: 40px;
     border-style: none;
-    height: 100px;
-    width: 100px;
-    font-size: 40px;
-    color: white;
-    margin:7px;
+    background-color: rgb(85,85,85);
+    width: 300px;
+    box-shadow: 0px 7px rgba(29, 29, 29, 0.247);
+}
+
+.input:hover {
+    background-color: rgb(105, 105, 105);
+}
+
+#converterPara {
+    margin: 0px
+}
+button {
+    height:40px;
+    border-style: none;
+    box-shadow: 5px, black;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(72,58,136);
+    color:white;
+    box-shadow: 0px 7px rgba(29, 29, 29, 0.247);
+    margin-left:25px;
 }
 
 button:hover {
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(95, 83, 148);
 }
 
 button:active {
-    background-color: rgb(65, 65, 65);
+    background-color: rgb(122, 115, 156);
+}
+#botaoTroca {
+    margin:10px;
+    margin-left: 125px;
+    margin-bottom: 0px;
 }
 
-.inputBox {
-    height: 100px;
-    width: 300px;
-    padding: 10px;
-    background-color: rgb(48, 48, 48);
-    border-radius: 20px;
-    border-style: none;
-    font-size: 30px;
-    color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 10px;
+#C1T1 {
+    border-style: solid;
+    border-color: rgb(100, 100, 100);
+    width: 350px;
+    border-width: 3px;
+    border-left: 0px;
+    border-bottom: 0px;
+    border-top: 0px;
 }
 
-.containerBandeira {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(48, 48, 48);
-    border-radius: 20px;
-    width: 400px;
-    margin-left: 35px;
+#C1T2 {
+    padding-left: 30px;
 }
 
-.bandeira {
-    border-radius: 25px;
-    height: 65px;
-    width: 65px;
-    overflow: hidden;
-    display: flex;
+#textBox {
+    border-radius: 30px;
+    background-color: rgb(85,85,85);
+    width: 600px;
+    height: 400px;
+    box-shadow: 0px 7px rgba(29, 29, 29, 0.247);
+    padding:10px;
+
+}
+
+.textDiv {
+    font-size: 25px;
+    margin:20px;
+    margin-bottom: 40px;
 }
