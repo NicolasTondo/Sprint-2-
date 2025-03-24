@@ -81,6 +81,7 @@ h1 {
     border-left: 0px;
     border-right: 0px;
     padding: 10px;
+    align-items: center;
 }
 
 .input {
@@ -158,4 +159,15 @@ button:active {
     font-size: 25px;
     margin:20px;
     margin-bottom: 40px;
+}
+
+.imgTitle {
+    display: flex;
+
+    align-items: center;
+}
+
+img {
+    height: 50px;
+    width: 50px;
 }
