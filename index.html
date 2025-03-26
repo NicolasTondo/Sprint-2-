@@ -50,22 +50,26 @@
             <div id="C1T1">
                 <div>
                     <h2>Valor</h2>
-                    <input class="input" type="text">
+                    <input class="input" type="text" id="amount">
                 </div>
                 <div>
-                    <h2>Converter de</h2>
-                    <select class="input" id="converterDe">
-
-                    </select>
+                    <div class="textBand">
+                        <h2>Converter de </h2>
+                        <img id="fromFlag" class="flag" src="https://flagcdn.com/us.svg" alt="Bandeira">
+                    </div>
+                    <select class="input" id="fromCurrency"></select>
                     <div>
                         <button id="botaoTroca">↑↓</button>
                     </div>
-                    <h2 style="margin: 10px;">Para</h2>
-                    <select class="input" id="converterPara"></select>
+                    <div class="textBand">
+                        <h2 style="margin: 10px;">Para </h2>
+                        <img id="toFlag" class="flag" src="https://flagcdn.com/br.svg" alt="Bandeira">
+                    </div>
+                    <select class="input" id="toCurrency"></select>
                 </div>
                 <div>
-                    <button>Resetar</button>
-                    <button>Converter</button>
+                    <button id="convert">Converter</button>
+                    <button id="reset">Resetar</button>
                 </div>
             </div>
             <div id="C1T2">
@@ -74,28 +78,38 @@
                 </h2>
                 <div id="textBox">
                     <div class="textDiv">
-                        <p>
-                            Converter de:
-                        </p>
+                        <div class="textBand">
+                            <p style="margin-right:10px;">
+                                Converter de:
+                            </p>
+                            <p id="moeda1" style="font-weight: bold;"></p>
+                        </div>
+                        <div class="textBand">
                         <p>
                             Para:
                         </p>
+                        <p id="moeda2" style="font-weight: bold;"></p>
+                        </div>
                     </div>
                     <div class="textDiv">
-                        <p>
-                            Valor a converter:
-                        </p>
-                        <p>
-                            Resultado da conversão:
-                        </p>
+                        <div class="textBand">
+                            <p style="margin-right:10px;">
+                                Valor a converter:
+                            </p>
+                            <p id="valorAC" style="font-weight: bold;"></p>
+                        </div>
+                        <div class="textBand">
+                            <p style="margin-right:10px;">
+                                Resultado da conversão:
+                            </p>
+                            <p id="result" style="font-weight: bold; margin:0px; padding:0px;"></p>
+                        </div>
                     </div>
                     <div class="textDiv">
                         <p>
                             Taxa:
                         </p>
-                        <p>
-                            a
-                        </p>
+                        <p></p>
                     </div>
                 </div>
             </div>
@@ -106,5 +120,6 @@
             </h2>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

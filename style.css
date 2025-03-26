@@ -94,6 +94,7 @@ h1 {
     background-color: rgb(85,85,85);
     width: 300px;
     box-shadow: 0px 7px rgba(29, 29, 29, 0.247);
+    text-align: center;
 }
 
 .input:hover {
@@ -156,9 +157,8 @@ button:active {
 }
 
 .textDiv {
-    font-size: 25px;
-    margin:20px;
-    margin-bottom: 40px;
+    font-size: 20px;
+    margin:0px;
 }
 
 .imgTitle {
@@ -170,4 +170,11 @@ button:active {
 img {
     height: 50px;
     width: 50px;
+}
+
+.textBand {
+    display: flex;
+    align-items: center;
+    padding-left:10px;
+    text-align:center;
 }
