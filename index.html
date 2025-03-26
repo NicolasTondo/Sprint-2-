@@ -1,35 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de Câmbio</title>
+    <title>Conversor de Moedas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h2>Conversor de Câmbio</h2>
-        
+        <h2>Conversor de Moedas</h2>
+
         <label for="fromCurrency">De:</label>
         <div class="currency-container">
-            <img id="fromFlag" class="flag" src="" alt="Bandeira">
+            <img id="fromFlag" class="flag" src="https://flagcdn.com/us.svg" alt="Bandeira">
             <select id="fromCurrency"></select>
         </div>
-        
+
         <label for="toCurrency">Para:</label>
         <div class="currency-container">
-            <img id="toFlag" class="flag" src="" alt="Bandeira">
+            <img id="toFlag" class="flag" src="https://flagcdn.com/br.svg" alt="Bandeira">
             <select id="toCurrency"></select>
         </div>
-        
+
         <label for="amount">Valor:</label>
-        <input type="number" id="amount" placeholder="Digite o valor">
-        
+        <input type="text" id="amount" placeholder="Digite o valor">
+
         <button id="convert">Converter</button>
         <button id="reset">Resetar</button>
-        
-        <h3 id="result">Resultado: -</h3>
+
+        <p id="result">Resultado: -</p>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>

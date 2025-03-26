@@ -7,8 +7,7 @@ const convertBtn = document.getElementById("convert");
 const resetBtn = document.getElementById("reset");
 const result = document.getElementById("result");
 
-
-// definir as API's como constante para não serem alteradas
+// Definir as APIs como constantes para não serem alteradas
 const EXCHANGE_API = "https://api.exchangerate-api.com/v4/latest/USD";
 const COUNTRY_API = "https://restcountries.com/v3.1/currency/";
 
@@ -18,43 +17,48 @@ let currencyData = {}; // Guardará os dados da API de moedas
 fetch(EXCHANGE_API)
     .then(response => response.json())
     .then(data => {
-        currencyData = data.rates; 
+        currencyData = data.rates;
         Object.keys(currencyData).forEach(currency => {
             fromCurrency.innerHTML += `<option value="${currency}">${currency}</option>`;
             toCurrency.innerHTML += `<option value="${currency}">${currency}</option>`;
         });
         fromCurrency.value = "USD";
-        // Define padrão inicial
-        // faz a busca na API  com base no nome indicado pela moeda como uma string 
         toCurrency.value = "BRL";
-        updateFlags(); 
-        // Atualiza bandeiras iniciais
+        updateFlags(); // Atualiza bandeiras iniciais
     });
 
 // Buscar bandeiras dos países para cada moeda
 function updateFlags() {
-    fetch(COUNTRY_API + fromCurrency.value.toLowerCase())
-        .then(response => response.json())
-        .then(data => {
-            fromFlag.src = data[0].flags.svg; 
-        })
-        .catch(() => fromFlag.src = "default-flag.png"); 
+    if (fromCurrency.value === "USD") {
+        fromFlag.src = "https://flagcdn.com/us.svg"; // Corrigida a bandeira dos EUA
+    } else {
+        fetch(COUNTRY_API + fromCurrency.value.toLowerCase())
+            .then(response => response.json())
+            .then(data => {
+                fromFlag.src = data[0].flags.svg;
+            })
+            .catch(() => fromFlag.src = "default-flag.png");
+    }
 
-    fetch(COUNTRY_API + toCurrency.value.toLowerCase())
-        .then(response => response.json())
-        .then(data => {
-            toFlag.src = data[0].flags.svg;
-        })
-        .catch(() => toFlag.src = "default-flag.png"); 
+    if (toCurrency.value === "USD") {
+        toFlag.src = "https://flagcdn.com/us.svg"; // Corrigida a bandeira dos EUA
+    } else {
+        fetch(COUNTRY_API + toCurrency.value.toLowerCase())
+            .then(response => response.json())
+            .then(data => {
+                toFlag.src = data[0].flags.svg;
+            })
+            .catch(() => toFlag.src = "default-flag.png");
+    }
 }
 
 // Atualizar bandeiras ao trocar moeda
 fromCurrency.addEventListener("change", updateFlags);
 toCurrency.addEventListener("change", updateFlags);
 
-// Impedir entrada de caracteres inválidos
+// Impedir entrada de caracteres inválidos (apenas números e ponto decimal)
 amount.addEventListener("input", () => {
-    amount.value = amount.value.replace(/[^0-9.]/g, ""); 
+    amount.value = amount.value.replace(/[^0-9.]/g, "");
 });
 
 // Converter moeda
