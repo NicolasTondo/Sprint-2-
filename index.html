@@ -29,21 +29,30 @@
                     <img src="dollar.png" alt="">
                     <h2>Dolar/USD</h2>
                 </div>
-                <p>R$5.30</p>
+                <div class="textBand">
+                    <p>R$</p>
+                    <p id="dolar"></p>
+                </div>
             </div>
             <div class="miniContainer">
                 <div class="imgTitle">
                     <img src="euro.png" alt="">
                     <h2>Euro/EUR</h2>
                 </div>
-                <p>R$6.00</p>
+                <div class="textBand">
+                    <p>R$</p>
+                    <p id="euro"></p>
+                </div>
             </div>
             <div class="miniContainer">
                 <div class="imgTitle">
                     <img src="yen.png" alt="">
                     <h2>Iene/JPY</h2>
                 </div>
-                <p>R$1000.00</p>
+                <div class="textBand">
+                    <p>R$</p>
+                    <p id="iene"></p>
+                </div>
             </div>
         </div>
         <div class="container">
@@ -55,7 +64,7 @@
                 <div>
                     <div class="textBand">
                         <h2>Converter de </h2>
-                        <img id="fromFlag" class="flag" src="https://flagcdn.com/us.svg" alt="Bandeira">
+                        <img id="fromFlag" class="flag" src="https://flagcdn.com/us.svg" alt="Bandeira" style="height: 30px; width: 50px;">
                     </div>
                     <select class="input" id="fromCurrency"></select>
                     <div>
@@ -63,7 +72,7 @@
                     </div>
                     <div class="textBand">
                         <h2 style="margin: 10px;">Para </h2>
-                        <img id="toFlag" class="flag" src="https://flagcdn.com/br.svg" alt="Bandeira">
+                        <img id="toFlag" class="flag" src="https://flagcdn.com/br.svg" alt="Bandeira" style="height: 30px; width: 50px;">
                     </div>
                     <select class="input" id="toCurrency"></select>
                 </div>
@@ -106,10 +115,12 @@
                         </div>
                     </div>
                     <div class="textDiv">
-                        <p>
-                            Taxa:
-                        </p>
-                        <p></p>
+                        <div class="textBand">
+                            <p>
+                                Taxa:
+                            </p>
+                            <p id="taxa"></p>
+                        </div>
                     </div>
                 </div>
             </div>
